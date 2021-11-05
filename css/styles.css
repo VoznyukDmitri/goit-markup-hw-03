@@ -1,0 +1,202 @@
+:root {
+  --color-text: #757575;
+  --color-title-text: #212121;
+  --color-footer-hero: #2f303a;
+  --color-main-background: #ffffff;
+  --color-secondary-background: #f5f4fa;
+  --color-link-hover: #2196f3;
+  --color-logo-footer: #ffffff;
+  --color-logo-header: #000000;
+  --color-real-address: #ffffff;
+  --color-link-address: rgba(255, 255, 255, 0.6);
+  --color-title-hero: #ffffff;
+}
+/* колір героя і підвалу #2F303A; */
+/* сірий  параграф  #757575; */
+/* синій лого і навігація  #2196F3; */
+/* телефон і мило в футорі  rgba(255, 255, 255, 0.6); */
+/* фон хедера і основний фон background: #FFFFFF; */
+/* другорядний фон карточок background: #F5F4FA; */
+/* колір заголовків тексу #212121 */
+
+/* ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+} */
+.logo,
+.heder-link,
+.site-nav,
+.link-nav,
+.contact-nav,
+.benefits-list,
+.work-list,
+.team-list,
+.logo-footer,
+.address-list,
+.footer-link,
+.address-real,
+.filter-list,
+.works,
+.works-link {
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: Roboto, sans-serif;
+  background: var(--color-main-background);
+  color: var(--color-title-text);
+  letter-spacing: 0.03e;
+  font-size: 14px;
+}
+/* Логотип */
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--color-link-hover);
+}
+.logo-black {
+  color: var(--color-logo-header);
+}
+/* Навігація */
+.heder-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--color-title-text);
+}
+.heder-link:hover,
+.heder-link:focus {
+  color: var(--color-link-hover);
+}
+
+/* Мило і тел. в шапці */
+
+.contact-nav {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+}
+.contact-nav:hover,
+.contact-nav:focus {
+  color: var(--color-link-hover);
+}
+
+/* Герой */
+.hero {
+  background-color: var(--color-footer-hero);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-logo-footer);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  background: var(--color-link-hover);
+  color: var(--color-main-background);
+}
+/* Переваги */
+.benefits-name {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+}
+.benefits-text {
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--color-text);
+}
+/* Чим ми займаэмося */
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+/* Наша команда */
+.team {
+  background: var(--color-secondary-background);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--color-text);
+}
+
+/* Підвал */
+
+.footer {
+  background-color: var(--color-footer-hero);
+}
+.address-real {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--color-real-address);
+}
+.footer-link {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--color-link-address);
+}
+.logo-footer {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--color-link-hover);
+}
+.logo-white {
+  color: var(--color-logo-footer);
+}
+
+/* ----------------ПОРТФОЛІО-------------------- */
+
+/* фільтр */
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--color-main-background);
+  background-color: var(--color-link-hover);
+}
+/* карточки */
+.works-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-title-text);
+}
+.works-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--color-text);
+}
