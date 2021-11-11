@@ -40,6 +40,7 @@ html {
   box-sizing: border-box;
 }
 /* ----------------------------------- */
+
 .logo,
 .heder-link,
 .site-nav,
@@ -67,6 +68,13 @@ body {
   letter-spacing: 0.03e;
   font-size: 14px;
 }
+
+/* .list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+} */
 /* Логотип */
 .logo {
   font-family: Raleway;
@@ -150,8 +158,6 @@ body {
 
 /* Герой */
 .hero {
-  margin-top: 0px;
-  margin-bottom: 94px;
   background-color: var(--color-footer-hero);
 }
 .hero-title {
@@ -181,16 +187,17 @@ body {
   text-align: center;
 }
 /* Переваги */
-.benefits {
-  margin-top: 0px;
-  margin-bottom: 94px;
-}
+
 .benefits-list {
   display: flex;
 }
-.benefits-list li:not(:last-child) {
-  margin-right: 30px;
+
+.benefits-iten {
+  width: calc((100% - 90px) / 4);
 }
+/* .benefits-iten:not(:last-child) {
+  margin-right: 30px;
+} */
 
 .benefits-name {
   margin-top: 0px;
@@ -209,10 +216,8 @@ body {
   color: var(--color-text);
 }
 /* Чим ми займаэмося */
-.work {
-  padding-bottom: 0px;
-}
-.work-title {
+
+.work h2 {
   margin-top: 0px;
   margin-bottom: 50px;
 
@@ -223,29 +228,26 @@ body {
 }
 .benefits-list {
   justify-content: space-between;
-  margin: 0px;
-  padding: 0px;
 }
 .work-list {
   justify-content: space-between;
   display: flex;
-  margin-top: 0px;
-  margin-bottom: 94px;
+}
+.work-iten img {
+  display: block;
 }
 /* Наша команда */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   background: var(--color-secondary-background);
 }
 .team-list {
   display: flex;
   justify-content: space-between;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
-.team-title {
+.team-iten img {
+  display: block;
+}
+.team h2 {
   margin-top: 0px;
   margin-bottom: 50px;
 
@@ -346,13 +348,17 @@ body {
 .filter-list {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
+}
+.filter ul {
   margin-bottom: 50px;
 }
-
 /* Карточки */
+.works-iten img {
+  display: block;
+}
+
 .works-iten:nth-child(n + 7) {
-  margin-bottom: 94px;
+  margin-bottom: 0px;
 }
 .works-iten {
   margin-bottom: 30px;
@@ -388,9 +394,11 @@ body {
   color: var(--color-text);
 }
 /* Контейнер */
+.section {
+  padding: 94px 0px;
+}
 .container {
   width: 1230px;
   padding: 0px 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px auto;
 }
