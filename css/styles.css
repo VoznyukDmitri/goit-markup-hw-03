@@ -10,6 +10,7 @@
   --color-real-address: #ffffff;
   --color-link-address: rgba(255, 255, 255, 0.6);
   --color-title-hero: #ffffff;
+  --color-border: #eeeeee;
 }
 /* колір героя і підвалу #2F303A; */
 /* сірий  параграф  #757575; */
@@ -91,7 +92,7 @@ body {
 .heder {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: var(--color-secondary-background);
+  border-bottom-color: var(--color-border);
 }
 
 .nav {
@@ -191,6 +192,8 @@ body {
 
 .benefits-list {
   display: flex;
+  margin: 0px;
+  padding: 0px;
 }
 
 .benefits-iten {
@@ -248,6 +251,8 @@ body {
   background: var(--color-secondary-background);
 }
 .team-list {
+  margin: 0px;
+  padding: 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -328,7 +333,7 @@ body {
   margin-bottom: 0px;
   padding: 0px;
 }
-.address-iten {
+.address-iten:not(:last-child) {
   margin-bottom: 9px;
 }
 /* ----------------ПОРТФОЛІО-------------------- */
@@ -370,8 +375,8 @@ body {
 }
 .works-iten {
   margin-bottom: 30px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
+  background: var(--color-title-hero);
+  border: 1px solid var(--color-border);
   box-sizing: border-box;
 }
 
